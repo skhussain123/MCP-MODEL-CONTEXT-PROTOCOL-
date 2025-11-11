@@ -1,5 +1,7 @@
 # Project Setup
 
+https://github.com/panaversity/learn-agentic-ai/tree/main/03_ai_protocols/01_mcp/04_fundamental_%20primitives/02_project_setup/agents_sdk_cli_project
+
 Let's setup the baseline project that we will use to complete fundamentals of MCP module. It is implemented in 3 different flavours and we will use the `agents_sdk_cli_project` as our baseline project
 
 ## MCP Chat - Agents SDK CLI project
