@@ -178,6 +178,14 @@ HTTP's story is one of constant improvement, driven by the web's hunger for spee
 Understanding this progression—from simple document retrieval to highly optimized, multiplexed communication over a new transport protocol—provides invaluable context for designing and troubleshooting the communication layers in sophisticated Agentic AI systems. Each step was about solving real problems to make interactions faster and more reliable.
 ---
 
+| Version      | Problem Solved                    | Still Had Issues                  |
+| ------------ | --------------------------------- | --------------------------------- |
+| **HTTP/0.9** | Basic HTML fetch                  | No headers, no status             |
+| **HTTP/1.0** | Headers + status                  | Slow (new connection per request) |
+| **HTTP/1.1** | Persistent connections            | HOL blocking                      |
+| **HTTP/2**   | Multiplexing + header compression | TCP-level HOL                     |
+| **HTTP/3**   | QUIC = no HOL + fastest           | Still growing adoption            |
+
 ## HTTP and Security (HTTPS)
 
 HTTP itself is a plain-text protocol, meaning data transmitted is not encrypted and can be intercepted or modified. To secure HTTP communication, **HTTPS (HTTP Secure)** is used.
