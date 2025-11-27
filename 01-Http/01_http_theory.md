@@ -152,6 +152,19 @@ HTTP's story is one of constant improvement, driven by the web's hunger for spee
 *   **The Bottleneck:** While much better, HOL blocking remained an issue. Also, its text-based headers could be verbose and redundant.
 *   **Reference:** [RFC 9112 - HTTP/1.1](https://datatracker.ietf.org/doc/html/rfc9112)
 
+#### 1) Head-of-Line (HOL) Blocking
+Ek request slow ho jaye to baaki saari requests wait karti hain, isliye page slow load hota hai.
+
+#### 2) Pipelining practically fail
+Browsers ne support band kar diya, isliye performance improve nahi hui.
+
+#### 3) Multiple parallel connections ki limit
+Browser ek domain per sirf 6 connections open karta hai → blocking hoti hai.
+
+#### 4) Text-based protocol → overhead zyada
+Headers bohat large aur repeatedly send hotay thay → slow communication.
+
+
 ### HTTP/2: Designed for Modern Speed (RFC 9113 - 2022, superseding RFC 7540)
 
 *   **The Need:** Overcome HTTP/1.1's performance limitations, especially HOL blocking and header overhead, to support richer, more interactive web applications.
