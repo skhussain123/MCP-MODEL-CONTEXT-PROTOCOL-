@@ -152,6 +152,7 @@ HTTP's story is one of constant improvement, driven by the web's hunger for spee
 *   **The Bottleneck:** While much better, HOL blocking remained an issue. Also, its text-based headers could be verbose and redundant.
 *   **Reference:** [RFC 9112 - HTTP/1.1](https://datatracker.ietf.org/doc/html/rfc9112)
 
+### Issue for Http 1.1
 #### 1) Head-of-Line (HOL) Blocking
 Ek request slow ho jaye to baaki saari requests wait karti hain, isliye page slow load hota hai.
 
