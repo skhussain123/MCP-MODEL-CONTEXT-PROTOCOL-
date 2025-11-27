@@ -178,6 +178,14 @@ Headers bohat large aur repeatedly send hotay thay → slow communication.
 *   **The Lingering TCP Issue:** Although HTTP/2 solved HOL blocking *within HTTP itself*, it still ran over TCP. If a TCP packet was lost, the entire TCP connection (and all multiplexed HTTP/2 streams on it) would stall until that packet was retransmitted.
 *   **Reference:** [RFC 9113 - HTTP/2](https://datatracker.ietf.org/doc/html/rfc9113)
 
+### HTTP/2 ke main issues short me:
+* TCP-level HOL blocking – ek lost packet poori connection ko block karta tha.
+* Slow handshakes – TCP + TLS handshake required, high latency me slow.
+* Connection break on network change – mobile Wi-Fi/data switch karne par reset ho jata tha.
+* Packet loss impact – zyada loss = saari streams slow.
+* Middlebox interference – proxies/CDNs kuch features block kar dete the.
+
+
 ### HTTP/3: The Next Generation, Built on QUIC (RFC 9114 - 2022)
 
 *   **The Need:** Eliminate the TCP-level HOL blocking that still affected HTTP/2 and further reduce connection latency.
