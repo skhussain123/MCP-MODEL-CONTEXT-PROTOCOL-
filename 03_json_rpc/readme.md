@@ -16,6 +16,22 @@ JSON-RPC 2.0 is a lightweight and stateless remote procedure call (RPC) protocol
 
 At its core, JSON-RPC 2.0 defines a set of data structures and the rules for their processing. It's designed for simplicity and is a popular choice for building APIs and distributed systems.
 
+JSON-RPC ek bohot hi lightweight aur simple protocol hai jo client aur server ke beech baat-cheet karne ke liye use hota hai. Ye basically remote procedure calls (RPC) ka ek version hai jo JSON format mein data bhejta aur receive karta hai.
+
+Aap apne phone se server ko kehte ho: 
+* "Bhai, ye function chala do aur mujhe result de do."
+* Is "function chala do" wale kaam ko hi JSON-RPC kehte hain.
+
+| Cheez           | REST                                       | JSON-RPC                                                   |
+| --------------- | ------------------------------------------ | ---------------------------------------------------------- |
+| **Style**       | Resource-based (URLs pe kaam)              | Function/Method-based                                      |
+| **URLs**        | Har cheez ke liye alag URL                 | Sirf **ek** URL (endpoint)                                 |
+| **Actions**     | HTTP methods (GET, POST, PUT, DELETE, ...) | Sirf `"method"` name bhejte ho                             |
+| **Example**     | `GET /users/123`                           | `{"method": "getUser", "params": [123]}`                   |
+| **Data format** | Mostly JSON (lekin flexible)               | Hamesha JSON                                               |
+| **Stateless**   | Haan                                       | Haan                                                       |
+| **Use case**    | Web APIs (public)                          | Internal services, microservices, blockchain, desktop apps |
+
 ### Key Concepts
 
 #### 1\. Request Object
