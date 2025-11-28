@@ -8,6 +8,14 @@ REST is not a protocol or a specific technology but rather a set of constraints 
 
 ---
 
+REST ek tarika ya style hai jo web services banane ke liye use hota hai, khas tor par APIs (Application Programming Interfaces) banate waqt.
+
+#### Simple zuban mein:
+Jab aap koi mobile app ya website banate ho jo server se data leta hai (jaise Facebook, Instagram, WhatsApp waghera), to client (app) aur server ke beech baat-cheet kaise hogi? Is baat-cheet ko easy, fast aur reliable banane ke liye REST ka concept use hota hai.
+
+
+---
+
 ## Core Architectural Constraints of REST
 
 REST is defined by six guiding architectural constraints. Adherence to these constraints aims to produce systems with desirable non-functional properties like performance, scalability, simplicity, modifiability, visibility, portability, and reliability.
