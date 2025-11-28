@@ -13,6 +13,34 @@ REST ek tarika ya style hai jo web services banane ke liye use hota hai, khas to
 #### Simple zuban mein:
 Jab aap koi mobile app ya website banate ho jo server se data leta hai (jaise Facebook, Instagram, WhatsApp waghera), to client (app) aur server ke beech baat-cheet kaise hogi? Is baat-cheet ko easy, fast aur reliable banane ke liye REST ka concept use hota hai.
 
+REST ke main rules ya principles ye hain:
+
+#### Client-Server: 
+Client alag hota hai (jaise aapka phone), server alag (jahan data rakha hota hai). Dono alag alag kaam karte hain.
+
+#### Stateless: 
+Har request puri khud-mukhtaar hoti hai. Matlab server ko yaad nahi rakhna padta ke pehle kya hua tha. Har baar client ko sab kuch batana padta hai (jaise login token waghera).
+
+#### Cacheable: 
+Jo data aata hai, usko cache (save temporarily) kiya ja sakta hai taake baar baar server se na maangna pade.
+
+#### 
+
+Uniform Interface: Sab kuch standard tarike se hota hai. Yani aap URLs aur HTTP methods use karte ho jaise:
+* GET → data lene ke liye (jaise posts dekhna)
+* POST → naya data banane ke liye (jaise nayi post dalna)
+* PUT/PATCH → data update karne ke liye
+* DELETE → data delete karne ke liye
+
+#### 
+Layered System: Beech mein kitne bhi layers ho sakte hain (jaise load balancer, security layer), client ko sirf end server se matlab hota hai.
+
+#### 
+Resources: Sab kuch "resource" ki tarah treat hota hai. Jaise:
+* /users → sab users
+* /users/123 → user jiska ID 123 hai
+* /posts, /comments waghera
+
 
 ---
 
